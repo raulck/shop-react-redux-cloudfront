@@ -24,8 +24,7 @@ Automated Deployment
 - installed and configured AWS CDK
 - AWS CDK constructs are added and configured
 - added necessary npm script(s) and code changes to synthesize, build and deploy app from local machine
-  [Link to PR with implemented automation for deployment](https://github.com/raulck/shop-react-redux-cloudfront/pull/1)
-  [CDK deployed website url](https://d1t0jc81ahdh84.cloudfront.net/)
+- [CDK deployed website url](https://d1t0jc81ahdh84.cloudfront.net/)
 
 ## Steps for deployment
 
