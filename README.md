@@ -1,10 +1,31 @@
 # React-shop-cloudfront
 
-## Template for Deploying a Frontend App with AWS CDK
+## CloudX: AWS Practitioner for JS
 
-AWS CDK constructs are added and configured. The app can be built and deployed by running npm script command
+### Assignment 2 – Serving frontend application
 
-- [CDK deployed website url](https://d1t0jc81ahdh84.cloudfront.net/)
+#### Tasks
+
+Manual Deployment:
+
+- created and configured an S3 bucket
+- built and manually uploaded the app to the created S3 bucket
+- created CloudFront distribution for the app
+- updated policy for previously created S3 bucket
+- created and tested CloudFront invalidations and custom error page
+
+Links after created CloudFront distribution and updated bucket policy:
+
+- [S3-website](https://myshopfrontapp.s3.eu-north-1.amazonaws.com/) - shows 403 Access Denied error
+- [CloudFront website](https://d1qqnb06cxsff6.cloudfront.net/) - site is served now with CloudFront and is available through the Internet over CloudFront URL
+
+Automated Deployment
+
+- installed and configured AWS CDK
+- AWS CDK constructs are added and configured
+- added necessary npm script(s) and code changes to synthesize, build and deploy app from local machine
+  [Link to PR with implemented automation for deployment](https://github.com/raulck/shop-react-redux-cloudfront/pull/1)
+  [CDK deployed website url](https://d1t0jc81ahdh84.cloudfront.net/)
 
 ## Steps for deployment
 
