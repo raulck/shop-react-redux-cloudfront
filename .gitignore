@@ -24,3 +24,18 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# AWS CDK-specific entries
+
+# Ignore CDK dependencies
+cdk/node_modules/     
+# CDK output folder
+cdk/cdk.out/          
+# CDK asset files (e.g., Lambda packages)
+cdk/*.zip             
+# CDK asset files (e.g., Lambda packages)
+cdk/*.tar.gz          
+# CDK context file
+cdk/cdk.context.json  
+# CDK staging folder
+cdk/.cdk.staging/     
