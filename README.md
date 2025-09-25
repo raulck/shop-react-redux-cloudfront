@@ -7,14 +7,14 @@
 #### Tasks
 
 - created lambda function getProductsList
-- available through url - [Products list](https://j3oxkk4qak.execute-api.eu-north-1.amazonaws.com/dev/products)
-- endpoint integrated with frontend app - [My shop app](https://d1nsj5hxmlwrai.cloudfront.net/)
+- available through url - [Products list](https://.execute-api.eu-north-1.amazonaws.com/dev/products)
+- endpoint integrated with frontend app - [My shop app](https://.cloudfront.net/)
 
 - created lambda function getProductsById
-- available through url - [Product by id](https://j3oxkk4qak.execute-api.eu-north-1.amazonaws.com/dev/products/1)
-- implemented error message for not available id - [Product by id error](https://j3oxkk4qak.execute-api.eu-north-1.amazonaws.com/dev/products/99)
+- available through url - [Product by id](https://.execute-api.eu-north-1.amazonaws.com/dev/products/1)
+- implemented error message for not available id - [Product by id error](https://.execute-api.eu-north-1.amazonaws.com/dev/products/99)
 
-- swagger - [https://j3oxkk4qak.execute-api.eu-north-1.amazonaws.com/dev/swagger](https://j3oxkk4qak.execute-api.eu-north-1.amazonaws.com/dev/swagger)
+- swagger - [https://j3oxkk4qak.execute-api.eu-north-1.amazonaws.com/dev/swagger](https://.execute-api.eu-north-1.amazonaws.com/dev/swagger)
 
 - ESBuild configured for product service, basic tests implemented, code separated, main error scenarios handled
 
