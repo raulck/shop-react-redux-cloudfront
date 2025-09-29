@@ -6,17 +6,19 @@ import { Order } from "~/models/Order";
 import { AvailableProduct, Product } from "~/models/Product";
 
 export const handlers = [
-  rest.get(`${API_PATHS.bff}/product`, (req, res, ctx) => {
-    return res(ctx.status(200), ctx.delay(), ctx.json<Product[]>(products));
+  rest.get(`${API_PATHS.bff}/products`, (req, res, ctx) => {
+    // return res(ctx.status(200), ctx.delay(), ctx.json<Product[]>(products));
+    return req.passthrough();
   }),
-  rest.put(`${API_PATHS.bff}/product`, (req, res, ctx) => {
-    return res(ctx.status(200));
+  rest.put(`${API_PATHS.bff}/products`, (req, res, ctx) => {
+    // return res(ctx.status(200));
+    return req.passthrough();
   }),
-  rest.delete(`${API_PATHS.bff}/product/:id`, (req, res, ctx) => {
-    return res(ctx.status(200));
+  rest.delete(`${API_PATHS.bff}/products/:id`, (req, res, ctx) => {
+    // return res(ctx.status(200));
+    return req.passthrough();
   }),
-  rest.get(`${API_PATHS.bff}/products/available`, (req, res, ctx) => {
-    console.log("req", req);
+  rest.get(`${API_PATHS.bff}/products`, (req, res, ctx) => {
     // return res(
     //   ctx.status(200),
     //   ctx.delay(),
