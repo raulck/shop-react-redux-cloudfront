@@ -43,7 +43,7 @@ export default function PageOrder() {
       queryKey: "products",
       queryFn: async () => {
         const res = await axios.get<AvailableProduct[]>(
-          `${API_PATHS.bff}/products/available`
+          `${API_PATHS.bff}/products`
         );
         return res.data;
       },
