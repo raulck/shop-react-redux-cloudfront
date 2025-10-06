@@ -23,8 +23,13 @@
 
 ##### Backend
 
-- [BE - import service](https://u7trhc85wh.execute-api.eu-north-1.amazonaws.com/dev/)
-- [BE - product service](https://himujifavc.execute-api.eu-north-1.amazonaws.com/dev/)
+- available through url - [Products list](https://himujifavc.execute-api.eu-north-1.amazonaws.com/dev/products)
+
+- available through url - [Product by id](https://himujifavc.execute-api.eu-north-1.amazonaws.com/dev/products/f1e29929-44cf-400a-b9bf-edcb050e32ab)
+- error message for not available id - [Product by id error](https://himujifavc.execute-api.eu-north-1.amazonaws.com/dev/products/99)
+
+- [BE - import service url](https://u7trhc85wh.execute-api.eu-north-1.amazonaws.com/dev/)
+- [BE - product service url](https://himujifavc.execute-api.eu-north-1.amazonaws.com/dev/)
 
 - swagger - [https://himujifavc.execute-api.eu-north-1.amazonaws.com/dev/swagger](https://himujifavc.execute-api.eu-north-1.amazonaws.com/dev/swagger)
 
