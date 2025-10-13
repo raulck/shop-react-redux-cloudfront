@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import axios from "axios";
@@ -9,8 +9,8 @@ type CSVFileImportProps = {
 };
 
 export default function CSVFileImport({ url, title }: CSVFileImportProps) {
-  const [file, setFile] = React.useState<File>();
-  const [status, setStatus] = React.useState("");
+  const [file, setFile] = useState<File>();
+  const [status, setStatus] = useState("");
 
   const onFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
@@ -45,6 +45,11 @@ export default function CSVFileImport({ url, title }: CSVFileImportProps) {
 
       setStatus("Upload successful!");
       setFile(undefined);
+      
+      // Reload the page after successful upload
+      setTimeout(() => {
+        window.location.reload();
+      }, 2000); // Small delay to show success message
     } catch (err) {
       console.error("Upload failed:", err);
       setStatus("Upload failed!");
